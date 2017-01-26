@@ -15,7 +15,7 @@ public class demo {
         JAXBContext jc = JAXBContext.newInstance(Customer.class);
  
         XMLInputFactory xif = XMLInputFactory.newInstance();
-        XMLStreamReader xsr = xif.createXMLStreamReader(new FileInputStream("C:\\PersonalData\\Documents\\jai\\Myworkspace\\JaxBExample2\\src\\com\\test\\input.xml"));
+        XMLStreamReader xsr = xif.createXMLStreamReader(new FileInputStream("<yourpath>input.xml"));
         xsr = new MyStreamReaderDelegate(xsr);
  
         Unmarshaller unmarshaller = jc.createUnmarshaller();
